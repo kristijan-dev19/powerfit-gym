@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PowerFit Gym</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#111;
+color:white;
+}
+
+nav{
+background:#000;
+padding:20px;
+display:flex;
+justify-content:center;
+gap:40px;
+position:sticky;
+top:0;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+transition:.3s;
+}
+
+nav a:hover{
+color:#ff3b3b;
+}
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url("gym.jpg");
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.hero h1{
+font-size:70px;
+}
+
+.hero p{
+font-size:22px;
+margin:20px 0;
+}
+
+.button{
+background:#ff3b3b;
+padding:15px 35px;
+color:white;
+text-decoration:none;
+border-radius:10px;
+display:inline-block;
+}
+
+.section{
+padding:70px 20px;
+max-width:1200px;
+margin:auto;
+text-align:center;
+}
+
+.section h2{
+font-size:40px;
+margin-bottom:20px;
+color:#ff3b3b;
+}
+
+.cards{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:25px;
+margin-top:30px;
+}
+
+.card{
+background:#1d1d1d;
+width:280px;
+border-radius:15px;
+overflow:hidden;
+transition:.3s;
+box-shadow:0 0 15px rgba(0,0,0,.4);
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+.card h3{
+margin:15px;
+}
+
+.card p{
+padding:0 15px 20px;
+}
+
+.price{
+font-size:28px;
+color:#ff3b3b;
+margin:20px;
+}
+
+.gallery{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+}
+
+.gallery img{
+width:250px;
+height:180px;
+object-fit:cover;
+border-radius:12px;
+}
+
+footer{
+background:#000;
+text-align:center;
+padding:30px;
+margin-top:40px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+<a href="#">Home</a>
+<a href="#about">About</a>
+<a href="#programs">Programs</a>
+<a href="#pricing">Pricing</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+<div>
+<h1>POWERFIT GYM</h1>
+<p>Train Hard. Stay Strong.</p>
+<a class="button" href="#pricing">Join Now</a>
+</div>
+</section>
+
+<section class="section" id="about">
+<h2>About Us</h2>
+
+<p>
+PowerFit Gym helps people build strength,
+confidence and a healthier lifestyle with
+modern equipment and experienced coaches.
+</p>
+
+</section>
+
+<section class="section" id="programs">
+
+<h2>Training Programs</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="strength.jpg">
+<h3>Strength Training</h3>
+<p>Professional strength workouts for all levels.</p>
+</div>
+
+<div class="card">
+<img src="cardio.jpg">
+<h3>Cardio</h3>
+<p>Burn calories and improve endurance.</p>
+</div>
+
+<div class="card">
+<img src="personal.jpg">
+<h3>Personal Trainer</h3>
+<p>One-on-one coaching for faster results.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="pricing">
+
+<h2>Membership</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Basic</h3>
+<div class="price">$25/month</div>
+<p>Gym Access</p>
+</div>
+
+<div class="card">
+<h3>Premium</h3>
+<div class="price">$45/month</div>
+<p>Gym + Classes</p>
+</div>
+
+<div class="card">
+<h3>VIP</h3>
+<div class="price">$70/month</div>
+<p>Everything Included</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Our Trainers</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="trainer1.jpg">
+<h3>John Smith</h3>
+<p>Strength Coach</p>
+</div>
+
+<div class="card">
+<img src="trainer2.jpg">
+<h3>Emma Brown</h3>
+<p>Fitness Coach</p>
+</div>
+
+<div class="card">
+<img src="trainer3.jpg">
+<h3>Michael Lee</h3>
+<p>Personal Trainer</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="gallery">
+
+<h2>Gallery</h2>
+
+<div class="gallery">
+
+<img src="gym1.jpg">
+<img src="gym2.jpg">
+<img src="gym3.jpg">
+<img src="gym4.jpg">
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Member Reviews</h2>
+
+<p>⭐⭐⭐⭐⭐</p>
+<p>"Amazing gym with fantastic trainers!"</p>
+
+<br>
+
+<p>⭐⭐⭐⭐⭐</p>
+<p>"The best fitness experience I've ever had."</p>
+
+</section>
+
+<section class="section" id="contact">
+
+<h2>Contact</h2>
+
+<p>Email: powerfitgym@gmail.com</p>
+
+<p>Phone: +1 555 123 456</p>
+
+<p>Open every day: 6:00 AM - 11:00 PM</p>
+
+<br>
+
+<a class="button" href="#">Become a Member</a>
+
+</section>
+
+<footer>
+
+<p>© 2026 PowerFit Gym. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>
